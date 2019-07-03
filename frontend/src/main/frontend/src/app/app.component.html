@@ -1,0 +1,14 @@
+<nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-inverse">
+  <a class="navbar-brand" style="color: maroon; font-weight: bold; font-size: 36px;">ULM</a>
+  <ul class="nav navbar-nav" routerLinkActive="active">
+    <li class="nav-item"><a class="nav-link" routerLink="home">Home</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="capture">Capture</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="time">Time</a></li>
+    <li class="nav-item"><a class="nav-link" routerLink="financial">Financial</a></li>
+  </ul>
+</nav>
+<div class="row">
+  <div class="col-md-12" style="padding-top:70px;">
+    <router-outlet></router-outlet>
+  </div>
+</div>

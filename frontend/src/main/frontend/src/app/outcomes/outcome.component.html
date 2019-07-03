@@ -1,0 +1,36 @@
+<div class="mx-auto" style="background-color:lightgray;width:fit-content;padding: 27px;border-radius: 18px;">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1 style="padding-bottom: 18px;">{{title}}</h1>
+    </div>
+  </div>
+
+  <form (ngSubmit)="addOutcome()">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-3">
+            <label for="result">Result</label>
+          </div>
+          <div class="col-md-9">
+            <textarea [(ngModel)]="outcome.result" name="result" id="result" cols="80" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <label for="reason">Reason</label>
+          </div>
+          <div class="col-md-9">
+            <textarea [(ngModel)]="outcome.reason" name="reason" id="reason" cols="80" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <button type="submit">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+

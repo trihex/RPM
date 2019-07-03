@@ -1,0 +1,34 @@
+<form name="form" (ngSubmit)="register();">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="dialog mx-auto">
+        <header>
+          <div class="title">New User</div>
+        </header>
+        <div style="margin: 9px;">
+          <div class="row">
+            <div class="col-md-6">
+              <label for="username">Email:</label>
+            </div>
+            <div class="col-md-6">
+              <input [(ngModel)]="user.username" type="text" name="username" id="username">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="password">Password:</label>
+            </div>
+            <div class="col-md-6">
+              <input [(ngModel)]="user.password" type="password" name="password" id="password">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

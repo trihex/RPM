@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap/dist/css/bootstrap-grid.min.css';
+
+body {
+  /*noinspection CssOptimizeSimilarProperties,CssReplaceWithShorthandSafely*/
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  /*noinspection CssOptimizeSimilarProperties,CssReplaceWithShorthandSafely*/
+  background-color: #131313;
+  background-size: 20px 20px;
+}
+
+.dialog {
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+.dialog p {
+  text-align: center;
+}
+.dialog header {
+  border-bottom: 1px solid maroon;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  display: flex;
+}
+.dialog header .title {
+  flex-grow: 1;
+  cursor: default;
+}
+.dialog header .exit-button {
+  cursor: pointer;
+  padding: 0 5px;
+}
